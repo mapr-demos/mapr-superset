@@ -4,7 +4,8 @@
 
 * [Overview](#overview)
 * [Installation](#installation)
-* [MapR Music Dashboard](#mapr-music-dashboard)
+* [MapR Music Hive Dashboard](#mapr-music-hive-dashboard)
+* [MapR Music Drill Dashboard](#mapr-music-drill-dashboard)
 
 
 ## Overview
@@ -124,7 +125,7 @@ superset runserver -d -p 8080
 ```
 
 
-## MapR Music Dashboard
+## MapR Music Hive Dashboard
 
 ![](images/mapr-music-dashboard.png?raw=true "MapR Music Dashboard")
 
@@ -228,5 +229,92 @@ $ maprcli node services -name resourcemanager -action restart -nodes firstnodeho
 
 * Import dashboard 
 
-This repository contains sample [MapR Dashboard](/dashboard/mapr-dashboard-hive.json) for Hive datasource. After 
-completing the steps above you can easily import this dashboard using `Import Dashboards` option under `Manage` menu.
+This repository contains sample [MapR Music Hive Dashboard](/dashboard/mapr-dashboard-hive.json) for Hive datasource. 
+After completing the steps above you can easily import this dashboard using `Import Dashboards` option under `Manage` 
+menu.
+
+
+## MapR Music Drill Dashboard
+
+This section explains how to connect to Drill datasource from Apache Superset. Repository also contains sample 
+[MapR Music Drill Dashboard](/dashboard/mapr-dashboard-drill.json) for Drill datasource which is identical to Hive one.
+
+
+* Install sqlalchemy-drill dialect
+
+
+[sqlalchemy-drill](https://github.com/JohnOmernik/sqlalchemy-drill) project provides Drill Dialect for sqlalchemy. We 
+will use [MapR fork](https://github.com/mapr-demos/sqlalchemy-drill/tree/mapr-superset) of this repository, which has 
+several fixes and tested against MapR Cluster:
+```
+
+$ git clone https://github.com/mapr-demos/sqlalchemy-drill/
+
+$ cd sqlalchemy-drill
+
+$ git checkout mapr-superset
+
+$ sudo python setup.py install
+
+```
+
+* Create Drill workspace
+
+Create new `apps` workspace via Drill Web UI at [http://drillnode:8047/storage/dfs](http://drillnode:8047/storage/dfs).
+Paste the following snippet under `workspaces`:
+```
+"apps": {
+    "location": "/apps",
+    "writable": true,
+    "defaultInputFormat": null,
+    "allowAccessOutsideWorkspace": true
+}
+    
+```
+
+Restart Drill using `maprcli`:
+```
+$ maprcli node services -nodes `hostname` -action restart -name drill-bits
+```
+
+* Create Drill views of MapR Music tables
+
+```
+$ sqlline -u jdbc:drill:zk=localhost:5181
+0: jdbc:drill:zk=localhost:5181> use dfs.apps;
++-------+---------------------------------------+
+|  ok   |                summary                |
++-------+---------------------------------------+
+| true  | Default schema changed to [dfs.apps]  |
++-------+---------------------------------------+
+1 row selected (0.142 seconds)
+
+```
+
+Create `mapr_albums` view:
+```
+0: jdbc:drill:zk=localhost:5181> create view mapr_albums (id, MBID, barcode, cover_image_url, lang, name, rating, status) as select cast(`_id` as varchar), cast(`MBID` as varchar), cast(`barcode` as varchar), cast(`cover_image_url` as varchar), cast(`language` as varchar), cast(`name` as varchar), cast(`rating` as double), cast(`status` as varchar) from dfs.apps.albums;
+```
+
+Create `mapr_artists` view:
+```
+0: jdbc:drill:zk=localhost:5181> create view mapr_artists (id, MBID, area, begin_date, end_date, gender, profile_image_url, name, rating) as select cast(`_id` as varchar), cast(`MBID` as varchar), cast(`area` as varchar), cast(`begin_date` as date), cast(`end_date` as date), cast(`gender` as varchar), cast(`profile_image_url` as varchar), cast(`name` as varchar), cast(`rating` as double) from dfs.apps.artists;
+```
+
+* Register Drill datasource
+
+Register `Drill` datasource in the same way as `Hive` datasource. Provide the following SQLAlchemy URI:
+```
+drill+sadrill://drillnode:8047/dfs/apps
+```
+
+* Register tables
+
+Once again, table registration is the same as with Hive. You need to specify `Drill` datasource name, `dfs.apps` schema 
+and `mapr_albums`(and `mapr_artists`) table name.
+
+![](images/adding-drill-table.png?raw=true "Adding Drill table")
+
+* Import dashboard 
+
+Import [MapR Music Drill Dashboard](/dashboard/mapr-dashboard-drill.json) in the same way as MapR Music Hive Dashboard.
