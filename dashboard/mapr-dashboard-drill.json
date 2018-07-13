@@ -2,903 +2,903 @@
     "datasources": [
         {
             "__SqlaTable__": {
-                "schema": "dfs.apps",
-                "main_dttm_col": "begin_date",
-                "is_sqllab_view": false,
-                "changed_on": {
-                    "__datetime__": "2018-07-11T16:36:23"
-                },
-                "offset": 0,
-                "perm": "[Drill].[mapr_artists](id:13)",
-                "description": null,
-                "cache_timeout": null,
-                "fetch_values_predicate": null,
-                "database": {
-                    "__Database__": {
-                        "id": 2,
-                        "allow_dml": false,
-                        "allow_ctas": false,
-                        "allow_run_sync": true,
-                        "changed_by_fk": 1,
-                        "created_by_fk": 1,
-                        "sqlalchemy_uri": "drill+sadrill://node9:8047/dfs/root",
-                        "perm": "[Drill].(id:2)",
-                        "password": null,
-                        "cache_timeout": null,
-                        "verbose_name": null,
-                        "created_on": {
-                            "__datetime__": "2018-07-11T12:11:10"
-                        },
-                        "database_name": "Drill",
-                        "allow_multi_schema_metadata_fetch": true,
-                        "allow_run_async": false,
-                        "impersonate_user": false,
-                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {}\r\n}\r\n",
-                        "changed_on": {
-                            "__datetime__": "2018-07-11T15:25:12"
-                        },
-                        "select_as_create_table_as": false,
-                        "expose_in_sqllab": false,
-                        "force_ctas_schema": ""
-                    }
-                },
-                "sql": null,
-                "database_id": 2,
-                "user_id": null,
-                "changed_by_fk": 1,
                 "template_params": null,
-                "params": "{\"remote_id\": 13, \"database_name\": \"Drill\"}",
-                "created_by_fk": 1,
-                "table_name": "mapr_artists",
+                "fetch_values_predicate": null,
+                "offset": 0,
+                "filter_select_enabled": false,
+                "cache_timeout": null,
+                "user_id": null,
                 "metrics": [
                     {
                         "__SqlMetric__": {
                             "warning_text": null,
+                            "id": 775,
                             "metric_type": "avg",
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "description": null,
-                            "is_restricted": false,
+                            "d3format": null,
                             "verbose_name": null,
                             "expression": "AVG(rating)",
-                            "id": 775,
+                            "is_restricted": false,
+                            "description": null,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:36:23"
                             },
-                            "table_id": 13,
+                            "table_id": 99999999999999913,
+                            "changed_by_fk": 1,
+                            "created_by_fk": 1,
                             "metric_name": "avg__rating",
-                            "d3format": null
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            }
                         }
                     },
                     {
                         "__SqlMetric__": {
                             "warning_text": null,
+                            "id": 776,
                             "metric_type": "sum",
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "description": null,
-                            "is_restricted": false,
+                            "d3format": null,
                             "verbose_name": null,
                             "expression": "SUM(rating)",
-                            "id": 776,
+                            "is_restricted": false,
+                            "description": null,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:36:23"
                             },
-                            "table_id": 13,
+                            "table_id": 99999999999999913,
+                            "changed_by_fk": 1,
+                            "created_by_fk": 1,
                             "metric_name": "sum__rating",
-                            "d3format": null
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            }
                         }
                     },
                     {
                         "__SqlMetric__": {
                             "warning_text": null,
+                            "id": 777,
                             "metric_type": "count",
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "description": null,
-                            "is_restricted": false,
+                            "d3format": null,
                             "verbose_name": "COUNT(*)",
                             "expression": "COUNT(*)",
-                            "id": 777,
+                            "is_restricted": false,
+                            "description": null,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:36:23"
                             },
-                            "table_id": 13,
+                            "table_id": 99999999999999913,
+                            "changed_by_fk": 1,
+                            "created_by_fk": 1,
                             "metric_name": "count",
-                            "d3format": null
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            }
                         }
                     }
                 ],
-                "id": 13,
-                "filter_select_enabled": false,
-                "created_on": {
-                    "__datetime__": "2018-07-11T16:36:23"
+                "schema": "dfs.apps",
+                "main_dttm_col": "begin_date",
+                "params": "{\"database_name\": \"Drill\", \"remote_id\": 99999999999999913}",
+                "perm": "[Drill].[mapr_artists](id:99999999999999913)",
+                "database": {
+                    "__Database__": {
+                        "changed_by_fk": 1,
+                        "id": 9999999999999992,
+                        "impersonate_user": false,
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {}\r\n}\r\n",
+                        "cache_timeout": null,
+                        "changed_on": {
+                            "__datetime__": "2018-07-11T17:33:12"
+                        },
+                        "verbose_name": null,
+                        "allow_dml": false,
+                        "force_ctas_schema": "",
+                        "password": null,
+                        "database_name": "Drill",
+                        "allow_run_async": false,
+                        "allow_run_sync": true,
+                        "expose_in_sqllab": false,
+                        "created_on": {
+                            "__datetime__": "2018-07-11T12:11:10"
+                        },
+                        "perm": "[Drill].(id:9999999999999992)",
+                        "created_by_fk": 1,
+                        "allow_ctas": false,
+                        "sqlalchemy_uri": "drill+sadrill://node9:8047/dfs/apps",
+                        "allow_multi_schema_metadata_fetch": true,
+                        "select_as_create_table_as": false
+                    }
                 },
+                "changed_by_fk": 1,
+                "id": 99999999999999913,
                 "columns": [
                     {
                         "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "type": "VARCHAR",
-                            "description": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
-                            "column_name": "id",
-                            "filterable": true,
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
+                            "is_dttm": false,
                             "id": 437,
+                            "type": "VARCHAR",
+                            "verbose_name": null,
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999913,
+                            "filterable": true,
+                            "changed_by_fk": 1,
+                            "groupby": true,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            },
+                            "column_name": "id",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": false,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:36:23"
                             },
-                            "max": false,
-                            "groupby": true,
+                            "count_distinct": false,
                             "avg": false,
-                            "is_dttm": false,
-                            "table_id": 13
+                            "created_by_fk": 1
                         }
                     },
                     {
                         "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "type": "VARCHAR",
-                            "description": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
-                            "column_name": "MBID",
-                            "filterable": true,
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
+                            "is_dttm": false,
                             "id": 438,
+                            "type": "VARCHAR",
+                            "verbose_name": null,
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999913,
+                            "filterable": true,
+                            "changed_by_fk": 1,
+                            "groupby": true,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            },
+                            "column_name": "MBID",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": false,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:36:23"
                             },
-                            "max": false,
-                            "groupby": true,
+                            "count_distinct": false,
                             "avg": false,
-                            "is_dttm": false,
-                            "table_id": 13
+                            "created_by_fk": 1
                         }
                     },
                     {
                         "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "type": "VARCHAR",
-                            "description": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
-                            "column_name": "area",
-                            "filterable": true,
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
+                            "is_dttm": false,
                             "id": 439,
+                            "type": "VARCHAR",
+                            "verbose_name": null,
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999913,
+                            "filterable": true,
+                            "changed_by_fk": 1,
+                            "groupby": true,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            },
+                            "column_name": "area",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": false,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:36:23"
                             },
-                            "max": false,
-                            "groupby": true,
+                            "count_distinct": false,
                             "avg": false,
-                            "is_dttm": false,
-                            "table_id": 13
+                            "created_by_fk": 1
                         }
                     },
                     {
                         "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "type": "DATE",
-                            "description": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
-                            "column_name": "begin_date",
-                            "filterable": false,
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
+                            "is_dttm": true,
                             "id": 440,
-                            "created_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "max": false,
-                            "groupby": false,
-                            "avg": false,
-                            "is_dttm": true,
-                            "table_id": 13
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
                             "type": "DATE",
-                            "description": null,
-                            "min": false,
                             "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
-                            "column_name": "end_date",
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999913,
                             "filterable": false,
                             "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
-                            "id": 441,
+                            "groupby": false,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            },
+                            "column_name": "begin_date",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": false,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:36:23"
                             },
-                            "max": false,
-                            "groupby": false,
+                            "count_distinct": false,
                             "avg": false,
+                            "created_by_fk": 1
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
                             "is_dttm": true,
-                            "table_id": 13
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "type": "VARCHAR",
-                            "description": null,
-                            "min": false,
+                            "id": 441,
+                            "type": "DATE",
                             "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
-                            "column_name": "gender",
-                            "filterable": true,
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
                             "expression": "",
-                            "id": 442,
-                            "created_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "max": false,
-                            "groupby": true,
-                            "avg": false,
-                            "is_dttm": false,
-                            "table_id": 13
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "type": "VARCHAR",
-                            "description": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
-                            "column_name": "profile_image_url",
-                            "filterable": true,
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
                             "is_active": true,
-                            "expression": "",
-                            "id": 443,
-                            "created_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "max": false,
-                            "groupby": true,
-                            "avg": false,
-                            "is_dttm": false,
-                            "table_id": 13
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "type": "VARCHAR",
-                            "description": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
-                            "column_name": "name",
-                            "filterable": true,
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
-                            "id": 444,
-                            "created_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "max": false,
-                            "groupby": true,
-                            "avg": false,
-                            "is_dttm": false,
-                            "table_id": 13
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:36:23"
-                            },
-                            "type": "FLOAT",
-                            "description": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": true,
-                            "python_date_format": null,
-                            "column_name": "rating",
+                            "table_id": 99999999999999913,
                             "filterable": false,
                             "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
-                            "id": 445,
+                            "groupby": false,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            },
+                            "column_name": "end_date",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": false,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:36:23"
                             },
-                            "max": false,
-                            "groupby": false,
-                            "avg": true,
+                            "count_distinct": false,
+                            "avg": false,
+                            "created_by_fk": 1
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
                             "is_dttm": false,
-                            "table_id": 13
+                            "id": 442,
+                            "type": "VARCHAR",
+                            "verbose_name": null,
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999913,
+                            "filterable": true,
+                            "changed_by_fk": 1,
+                            "groupby": true,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            },
+                            "column_name": "gender",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            },
+                            "count_distinct": false,
+                            "avg": false,
+                            "created_by_fk": 1
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "is_dttm": false,
+                            "id": 443,
+                            "type": "VARCHAR",
+                            "verbose_name": null,
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999913,
+                            "filterable": true,
+                            "changed_by_fk": 1,
+                            "groupby": true,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            },
+                            "column_name": "profile_image_url",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            },
+                            "count_distinct": false,
+                            "avg": false,
+                            "created_by_fk": 1
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "is_dttm": false,
+                            "id": 444,
+                            "type": "VARCHAR",
+                            "verbose_name": null,
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999913,
+                            "filterable": true,
+                            "changed_by_fk": 1,
+                            "groupby": true,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            },
+                            "column_name": "name",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            },
+                            "count_distinct": false,
+                            "avg": false,
+                            "created_by_fk": 1
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "is_dttm": false,
+                            "id": 445,
+                            "type": "FLOAT",
+                            "verbose_name": null,
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999913,
+                            "filterable": false,
+                            "changed_by_fk": 1,
+                            "groupby": false,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            },
+                            "column_name": "rating",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": true,
+                            "created_on": {
+                                "__datetime__": "2018-07-11T16:36:23"
+                            },
+                            "count_distinct": false,
+                            "avg": true,
+                            "created_by_fk": 1
                         }
                     }
                 ],
+                "default_endpoint": null,
+                "changed_on": {
+                    "__datetime__": "2018-07-11T16:36:23"
+                },
+                "is_sqllab_view": false,
+                "description": null,
+                "table_name": "mapr_artists",
+                "database_id": 9999999999999992,
+                "created_on": {
+                    "__datetime__": "2018-07-11T16:36:23"
+                },
                 "is_featured": false,
-                "default_endpoint": null
+                "created_by_fk": 1,
+                "sql": null
             }
         },
         {
             "__SqlaTable__": {
-                "schema": "dfs.apps",
-                "main_dttm_col": null,
-                "is_sqllab_view": false,
-                "changed_on": {
-                    "__datetime__": "2018-07-11T16:37:38"
-                },
-                "offset": 0,
-                "perm": "[Drill].[mapr_albums](id:14)",
-                "description": null,
-                "cache_timeout": null,
-                "fetch_values_predicate": null,
-                "database": {
-                    "__Database__": {
-                        "id": 2,
-                        "allow_dml": false,
-                        "allow_ctas": false,
-                        "allow_run_sync": true,
-                        "changed_by_fk": 1,
-                        "created_by_fk": 1,
-                        "sqlalchemy_uri": "drill+sadrill://node9:8047/dfs/root",
-                        "perm": "[Drill].(id:2)",
-                        "password": null,
-                        "cache_timeout": null,
-                        "verbose_name": null,
-                        "created_on": {
-                            "__datetime__": "2018-07-11T12:11:10"
-                        },
-                        "database_name": "Drill",
-                        "allow_multi_schema_metadata_fetch": true,
-                        "allow_run_async": false,
-                        "impersonate_user": false,
-                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {}\r\n}\r\n",
-                        "changed_on": {
-                            "__datetime__": "2018-07-11T15:25:12"
-                        },
-                        "select_as_create_table_as": false,
-                        "expose_in_sqllab": false,
-                        "force_ctas_schema": ""
-                    }
-                },
-                "sql": null,
-                "database_id": 2,
-                "user_id": null,
-                "changed_by_fk": 1,
                 "template_params": null,
-                "params": "{\"remote_id\": 14, \"database_name\": \"Drill\"}",
-                "created_by_fk": 1,
-                "table_name": "mapr_albums",
+                "fetch_values_predicate": null,
+                "offset": 0,
+                "filter_select_enabled": false,
+                "cache_timeout": null,
+                "user_id": null,
                 "metrics": [
                     {
                         "__SqlMetric__": {
                             "warning_text": null,
+                            "id": 778,
                             "metric_type": "avg",
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:37:38"
-                            },
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "description": null,
-                            "is_restricted": false,
+                            "d3format": null,
                             "verbose_name": null,
                             "expression": "AVG(rating)",
-                            "id": 778,
+                            "is_restricted": false,
+                            "description": null,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:37:38"
                             },
-                            "table_id": 14,
+                            "table_id": 99999999999999914,
+                            "changed_by_fk": 1,
+                            "created_by_fk": 1,
                             "metric_name": "avg__rating",
-                            "d3format": null
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:37:38"
+                            }
                         }
                     },
                     {
                         "__SqlMetric__": {
                             "warning_text": null,
+                            "id": 779,
                             "metric_type": "sum",
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:37:38"
-                            },
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "description": null,
-                            "is_restricted": false,
+                            "d3format": null,
                             "verbose_name": null,
                             "expression": "SUM(rating)",
-                            "id": 779,
+                            "is_restricted": false,
+                            "description": null,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:37:38"
                             },
-                            "table_id": 14,
+                            "table_id": 99999999999999914,
+                            "changed_by_fk": 1,
+                            "created_by_fk": 1,
                             "metric_name": "sum__rating",
-                            "d3format": null
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:37:38"
+                            }
                         }
                     },
                     {
                         "__SqlMetric__": {
                             "warning_text": null,
+                            "id": 780,
                             "metric_type": "count",
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:37:38"
-                            },
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "description": null,
-                            "is_restricted": false,
+                            "d3format": null,
                             "verbose_name": "COUNT(*)",
                             "expression": "COUNT(*)",
-                            "id": 780,
+                            "is_restricted": false,
+                            "description": null,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:37:38"
                             },
-                            "table_id": 14,
+                            "table_id": 99999999999999914,
+                            "changed_by_fk": 1,
+                            "created_by_fk": 1,
                             "metric_name": "count",
-                            "d3format": null
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:37:38"
+                            }
                         }
                     }
                 ],
-                "id": 14,
-                "filter_select_enabled": false,
-                "created_on": {
-                    "__datetime__": "2018-07-11T16:37:38"
+                "schema": "dfs.apps",
+                "main_dttm_col": null,
+                "params": "{\"database_name\": \"Drill\", \"remote_id\": 99999999999999914}",
+                "perm": "[Drill].[mapr_albums](id:99999999999999914)",
+                "database": {
+                    "__Database__": {
+                        "changed_by_fk": 1,
+                        "id": 9999999999999992,
+                        "impersonate_user": false,
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {}\r\n}\r\n",
+                        "cache_timeout": null,
+                        "changed_on": {
+                            "__datetime__": "2018-07-11T17:33:12"
+                        },
+                        "verbose_name": null,
+                        "allow_dml": false,
+                        "force_ctas_schema": "",
+                        "password": null,
+                        "database_name": "Drill",
+                        "allow_run_async": false,
+                        "allow_run_sync": true,
+                        "expose_in_sqllab": false,
+                        "created_on": {
+                            "__datetime__": "2018-07-11T12:11:10"
+                        },
+                        "perm": "[Drill].(id:9999999999999992)",
+                        "created_by_fk": 1,
+                        "allow_ctas": false,
+                        "sqlalchemy_uri": "drill+sadrill://node8:8047/dfs/apps",
+                        "allow_multi_schema_metadata_fetch": true,
+                        "select_as_create_table_as": false
+                    }
                 },
+                "changed_by_fk": 1,
+                "id": 99999999999999914,
                 "columns": [
                     {
                         "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:37:38"
-                            },
-                            "type": "VARCHAR",
-                            "description": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
-                            "column_name": "id",
-                            "filterable": true,
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
+                            "is_dttm": false,
                             "id": 446,
+                            "type": "VARCHAR",
+                            "verbose_name": null,
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999914,
+                            "filterable": true,
+                            "changed_by_fk": 1,
+                            "groupby": true,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:37:38"
+                            },
+                            "column_name": "id",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": false,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:37:38"
                             },
-                            "max": false,
-                            "groupby": true,
+                            "count_distinct": false,
                             "avg": false,
-                            "is_dttm": false,
-                            "table_id": 14
+                            "created_by_fk": 1
                         }
                     },
                     {
                         "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:37:38"
-                            },
-                            "type": "VARCHAR",
-                            "description": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
-                            "column_name": "MBID",
-                            "filterable": true,
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
+                            "is_dttm": false,
                             "id": 447,
+                            "type": "VARCHAR",
+                            "verbose_name": null,
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999914,
+                            "filterable": true,
+                            "changed_by_fk": 1,
+                            "groupby": true,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:37:38"
+                            },
+                            "column_name": "MBID",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": false,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:37:38"
                             },
-                            "max": false,
-                            "groupby": true,
+                            "count_distinct": false,
                             "avg": false,
-                            "is_dttm": false,
-                            "table_id": 14
+                            "created_by_fk": 1
                         }
                     },
                     {
                         "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:37:38"
-                            },
-                            "type": "VARCHAR",
-                            "description": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
-                            "column_name": "barcode",
-                            "filterable": true,
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
+                            "is_dttm": false,
                             "id": 448,
+                            "type": "VARCHAR",
+                            "verbose_name": null,
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999914,
+                            "filterable": true,
+                            "changed_by_fk": 1,
+                            "groupby": true,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:37:38"
+                            },
+                            "column_name": "barcode",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": false,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:37:38"
                             },
-                            "max": false,
-                            "groupby": true,
+                            "count_distinct": false,
                             "avg": false,
-                            "is_dttm": false,
-                            "table_id": 14
+                            "created_by_fk": 1
                         }
                     },
                     {
                         "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:37:38"
-                            },
-                            "type": "VARCHAR",
-                            "description": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
-                            "column_name": "cover_image_url",
-                            "filterable": true,
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
+                            "is_dttm": false,
                             "id": 449,
+                            "type": "VARCHAR",
+                            "verbose_name": null,
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999914,
+                            "filterable": true,
+                            "changed_by_fk": 1,
+                            "groupby": true,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:37:38"
+                            },
+                            "column_name": "cover_image_url",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": false,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:37:38"
                             },
-                            "max": false,
-                            "groupby": true,
+                            "count_distinct": false,
                             "avg": false,
-                            "is_dttm": false,
-                            "table_id": 14
+                            "created_by_fk": 1
                         }
                     },
                     {
                         "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:37:38"
-                            },
-                            "type": "VARCHAR",
-                            "description": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
-                            "column_name": "lang",
-                            "filterable": true,
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
+                            "is_dttm": false,
                             "id": 450,
-                            "created_on": {
-                                "__datetime__": "2018-07-11T16:37:38"
-                            },
-                            "max": false,
-                            "groupby": true,
-                            "avg": false,
-                            "is_dttm": false,
-                            "table_id": 14
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "database_expression": null,
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T16:37:38"
-                            },
                             "type": "VARCHAR",
-                            "description": null,
-                            "min": false,
                             "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
-                            "column_name": "name",
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999914,
                             "filterable": true,
                             "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
-                            "id": 451,
+                            "groupby": true,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:37:38"
+                            },
+                            "column_name": "lang",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": false,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:37:38"
                             },
-                            "max": false,
-                            "groupby": true,
+                            "count_distinct": false,
                             "avg": false,
-                            "is_dttm": false,
-                            "table_id": 14
+                            "created_by_fk": 1
                         }
                     },
                     {
                         "__TableColumn__": {
-                            "database_expression": null,
+                            "is_dttm": false,
+                            "id": 451,
+                            "type": "VARCHAR",
+                            "verbose_name": null,
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999914,
+                            "filterable": true,
+                            "changed_by_fk": 1,
+                            "groupby": true,
+                            "python_date_format": null,
+                            "min": false,
                             "changed_on": {
                                 "__datetime__": "2018-07-11T16:37:38"
                             },
-                            "type": "FLOAT",
+                            "column_name": "name",
+                            "database_expression": null,
+                            "max": false,
                             "description": null,
-                            "min": false,
-                            "verbose_name": null,
+                            "sum": false,
+                            "created_on": {
+                                "__datetime__": "2018-07-11T16:37:38"
+                            },
                             "count_distinct": false,
-                            "sum": true,
-                            "python_date_format": null,
-                            "column_name": "rating",
+                            "avg": false,
+                            "created_by_fk": 1
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "is_dttm": false,
+                            "id": 452,
+                            "type": "FLOAT",
+                            "verbose_name": null,
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999914,
                             "filterable": false,
                             "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
-                            "id": 452,
+                            "groupby": false,
+                            "python_date_format": null,
+                            "min": false,
+                            "changed_on": {
+                                "__datetime__": "2018-07-11T16:37:38"
+                            },
+                            "column_name": "rating",
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": true,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:37:38"
                             },
-                            "max": false,
-                            "groupby": false,
+                            "count_distinct": false,
                             "avg": true,
-                            "is_dttm": false,
-                            "table_id": 14
+                            "created_by_fk": 1
                         }
                     },
                     {
                         "__TableColumn__": {
-                            "database_expression": null,
+                            "is_dttm": false,
+                            "id": 453,
+                            "type": "VARCHAR",
+                            "verbose_name": null,
+                            "expression": "",
+                            "is_active": true,
+                            "table_id": 99999999999999914,
+                            "filterable": true,
+                            "changed_by_fk": 1,
+                            "groupby": true,
+                            "python_date_format": null,
+                            "min": false,
                             "changed_on": {
                                 "__datetime__": "2018-07-11T16:37:38"
                             },
-                            "type": "VARCHAR",
-                            "description": null,
-                            "min": false,
-                            "verbose_name": null,
-                            "count_distinct": false,
-                            "sum": false,
-                            "python_date_format": null,
                             "column_name": "status",
-                            "filterable": true,
-                            "changed_by_fk": 1,
-                            "created_by_fk": 1,
-                            "is_active": true,
-                            "expression": "",
-                            "id": 453,
+                            "database_expression": null,
+                            "max": false,
+                            "description": null,
+                            "sum": false,
                             "created_on": {
                                 "__datetime__": "2018-07-11T16:37:38"
                             },
-                            "max": false,
-                            "groupby": true,
+                            "count_distinct": false,
                             "avg": false,
-                            "is_dttm": false,
-                            "table_id": 14
+                            "created_by_fk": 1
                         }
                     }
                 ],
+                "default_endpoint": null,
+                "changed_on": {
+                    "__datetime__": "2018-07-11T16:37:38"
+                },
+                "is_sqllab_view": false,
+                "description": null,
+                "table_name": "mapr_albums",
+                "database_id": 9999999999999992,
+                "created_on": {
+                    "__datetime__": "2018-07-11T16:37:38"
+                },
                 "is_featured": false,
-                "default_endpoint": null
+                "created_by_fk": 1,
+                "sql": null
             }
         }
     ],
     "dashboards": [
         {
             "__Dashboard__": {
-                "slices": [
-                    {
-                        "__Slice__": {
-                            "datasource_name": "dfs.apps.mapr_albums",
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T17:12:05"
-                            },
-                            "slice_name": "Total Albums",
-                            "created_by_fk": 1,
-                            "perm": "[Drill].[mapr_albums](id:14)",
-                            "description": null,
-                            "cache_timeout": null,
-                            "viz_type": "big_number_total",
-                            "id": 73,
-                            "created_on": {
-                                "__datetime__": "2018-07-11T16:38:31"
-                            },
-                            "params": "{\"schema\": \"dfs.apps.mapr_albums\", \"remote_id\": 73, \"time_grain_sqla\": null, \"since\": \"\", \"datasource_name\": \"dfs.apps.mapr_albums\", \"metric\": \"count\", \"y_axis_format\": \".3s\", \"granularity_sqla\": null, \"viz_type\": \"big_number_total\", \"until\": \"\", \"url_params\": {}, \"datasource\": \"14__table\", \"adhoc_filters\": null, \"database_name\": \"Drill\", \"slice_id\": 73}",
-                            "datasource_id": 14,
-                            "datasource_type": "table",
-                            "changed_by_fk": 1
-                        }
-                    },
-                    {
-                        "__Slice__": {
-                            "datasource_name": "dfs.apps.mapr_albums",
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T17:12:05"
-                            },
-                            "slice_name": "Albums By Language",
-                            "created_by_fk": 1,
-                            "perm": "[Drill].[mapr_albums](id:14)",
-                            "description": null,
-                            "cache_timeout": null,
-                            "viz_type": "dist_bar",
-                            "id": 74,
-                            "created_on": {
-                                "__datetime__": "2018-07-11T16:39:38"
-                            },
-                            "params": "{\"x_ticks_layout\": \"auto\", \"schema\": \"dfs.apps.mapr_albums\", \"adhoc_filters\": null, \"datasource_name\": \"dfs.apps.mapr_albums\", \"x_axis_label\": \"\", \"show_legend\": true, \"granularity_sqla\": null, \"database_name\": \"Drill\", \"order_bars\": false, \"show_controls\": false, \"url_params\": {}, \"datasource\": \"14__table\", \"reduce_x_ticks\": false, \"remote_id\": 74, \"contribution\": false, \"groupby\": [\"lang\"], \"color_scheme\": \"bnbColors\", \"time_grain_sqla\": null, \"since\": \"\", \"y_axis_label\": \"\", \"row_limit\": 10000, \"metrics\": [\"count\"], \"bottom_margin\": \"auto\", \"viz_type\": \"dist_bar\", \"until\": \"\", \"show_bar_value\": false, \"y_axis_format\": \".3s\", \"bar_stacked\": false, \"slice_id\": 74, \"columns\": []}",
-                            "datasource_id": 14,
-                            "datasource_type": "table",
-                            "changed_by_fk": 1
-                        }
-                    },
-                    {
-                        "__Slice__": {
-                            "datasource_name": "dfs.apps.mapr_artists",
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T17:12:05"
-                            },
-                            "slice_name": "Total Artists",
-                            "created_by_fk": 1,
-                            "perm": "[Drill].[mapr_artists](id:13)",
-                            "description": "",
-                            "cache_timeout": null,
-                            "viz_type": "big_number_total",
-                            "id": 76,
-                            "created_on": {
-                                "__datetime__": "2018-07-11T16:41:48"
-                            },
-                            "params": "{\"schema\": \"dfs.apps.mapr_artists\", \"remote_id\": 76, \"time_grain_sqla\": null, \"since\": \"\", \"datasource_name\": \"dfs.apps.mapr_artists\", \"metric\": \"count\", \"y_axis_format\": \".3s\", \"granularity_sqla\": \"begin_date\", \"viz_type\": \"big_number_total\", \"until\": \"\", \"url_params\": {}, \"datasource\": \"13__table\", \"adhoc_filters\": null, \"database_name\": \"Drill\"}",
-                            "datasource_id": 13,
-                            "datasource_type": "table",
-                            "changed_by_fk": 1
-                        }
-                    },
-                    {
-                        "__Slice__": {
-                            "datasource_name": "dfs.apps.mapr_artists",
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T17:12:05"
-                            },
-                            "slice_name": "Artists By Gender",
-                            "created_by_fk": 1,
-                            "perm": "[Drill].[mapr_artists](id:13)",
-                            "description": null,
-                            "cache_timeout": null,
-                            "viz_type": "pie",
-                            "id": 77,
-                            "created_on": {
-                                "__datetime__": "2018-07-11T16:44:41"
-                            },
-                            "params": "{\"color_scheme\": \"bnbColors\", \"schema\": \"dfs.apps.mapr_artists\", \"time_grain_sqla\": null, \"pie_label_type\": \"key\", \"since\": \"\", \"datasource_name\": \"dfs.apps.mapr_artists\", \"metric\": \"count\", \"labels_outside\": true, \"show_legend\": true, \"granularity_sqla\": \"begin_date\", \"viz_type\": \"pie\", \"until\": \"\", \"url_params\": {}, \"groupby\": [\"gender\"], \"donut\": false, \"datasource\": \"13__table\", \"adhoc_filters\": null, \"remote_id\": 77, \"database_name\": \"Drill\", \"slice_id\": 77}",
-                            "datasource_id": 13,
-                            "datasource_type": "table",
-                            "changed_by_fk": 1
-                        }
-                    },
-                    {
-                        "__Slice__": {
-                            "datasource_name": "dfs.apps.mapr_artists",
-                            "changed_on": {
-                                "__datetime__": "2018-07-11T17:12:05"
-                            },
-                            "slice_name": "Artists By Area",
-                            "created_by_fk": 1,
-                            "perm": "[Drill].[mapr_artists](id:13)",
-                            "description": null,
-                            "cache_timeout": null,
-                            "viz_type": "world_map",
-                            "id": 78,
-                            "created_on": {
-                                "__datetime__": "2018-07-11T16:48:48"
-                            },
-                            "params": "{\"schema\": \"dfs.apps.mapr_artists\", \"country_fieldtype\": \"name\", \"time_grain_sqla\": null, \"adhoc_filters\": null, \"datasource_name\": \"dfs.apps.mapr_artists\", \"metric\": \"count\", \"max_bubble_size\": \"25\", \"show_bubbles\": false, \"remote_id\": 78, \"granularity_sqla\": \"begin_date\", \"viz_type\": \"world_map\", \"until\": \"\", \"url_params\": {}, \"entity\": \"area\", \"datasource\": \"13__table\", \"since\": \"\", \"database_name\": \"Drill\", \"secondary_metric\": {\"column\": null, \"hasCustomLabel\": false, \"optionName\": \"metric_8zlrjapfd1p_sq5zopx9p4\", \"fromFormData\": true, \"expressionType\": \"SQL\", \"sqlExpression\": \"1\", \"label\": \"1\", \"aggregate\": null}, \"slice_id\": 78}",
-                            "datasource_id": 13,
-                            "datasource_type": "table",
-                            "changed_by_fk": 1
-                        }
-                    }
-                ],
+                "changed_by_fk": 1,
+                "id": 6,
+                "css": "",
                 "changed_on": {
                     "__datetime__": "2018-07-11T16:49:28"
                 },
-                "changed_by_fk": 1,
-                "created_by_fk": 1,
-                "description": null,
-                "json_metadata": "{\"filter_immune_slice_fields\": {}, \"filter_immune_slices\": [], \"timed_refresh_immune_slices\": [], \"expanded_slices\": {}, \"default_filters\": \"{}\", \"remote_id\": 5}",
-                "slug": null,
-                "id": 5,
-                "css": "",
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "id": 99999999999999973,
+                            "cache_timeout": null,
+                            "changed_on": {
+                                "__datetime__": "2018-07-12T19:41:00"
+                            },
+                            "datasource_type": "table",
+                            "description": "",
+                            "viz_type": "big_number_total",
+                            "params": "{\"y_axis_format\": \".3s\", \"time_grain_sqla\": null, \"since\": \"\", \"datasource_name\": \"dfs.apps.mapr_albums\", \"until\": \"\", \"remote_id\": 99999999999999973, \"metric\": \"count\", \"adhoc_filters\": null, \"database_name\": \"Drill\", \"viz_type\": \"big_number_total\", \"schema\": \"dfs.apps.mapr_albums\", \"datasource\": \"14__table\", \"slice_id\": 99999999999999973, \"granularity_sqla\": null, \"url_params\": {}}",
+                            "created_on": {
+                                "__datetime__": "2018-07-11T16:38:31"
+                            },
+                            "perm": "[Drill].[mapr_albums](id:99999999999999914)",
+                            "created_by_fk": 1,
+                            "slice_name": "Total Albums: Drill",
+                            "datasource_name": "dfs.apps.mapr_albums",
+                            "datasource_id": 99999999999999914
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "id": 99999999999999974,
+                            "cache_timeout": null,
+                            "changed_on": {
+                                "__datetime__": "2018-07-12T19:41:00"
+                            },
+                            "datasource_type": "table",
+                            "description": "",
+                            "viz_type": "dist_bar",
+                            "params": "{\"show_bar_value\": false, \"columns\": [], \"y_axis_format\": \".3s\", \"contribution\": false, \"y_axis_label\": \"\", \"metrics\": [\"count\"], \"until\": \"\", \"schema\": \"dfs.apps.mapr_albums\", \"database_name\": \"Drill\", \"order_bars\": false, \"viz_type\": \"dist_bar\", \"show_legend\": true, \"x_axis_label\": \"\", \"bottom_margin\": \"auto\", \"datasource\": \"14__table\", \"slice_id\": 99999999999999974, \"since\": \"\", \"groupby\": [\"lang\"], \"row_limit\": 10000, \"time_grain_sqla\": null, \"x_ticks_layout\": \"auto\", \"reduce_x_ticks\": false, \"remote_id\": 99999999999999974, \"adhoc_filters\": null, \"url_params\": {}, \"show_controls\": false, \"bar_stacked\": false, \"color_scheme\": \"bnbColors\", \"datasource_name\": \"dfs.apps.mapr_albums\", \"granularity_sqla\": null}",
+                            "created_on": {
+                                "__datetime__": "2018-07-11T16:39:38"
+                            },
+                            "perm": "[Drill].[mapr_albums](id:99999999999999914)",
+                            "created_by_fk": 1,
+                            "slice_name": "Albums By Language: Drill",
+                            "datasource_name": "dfs.apps.mapr_albums",
+                            "datasource_id": 99999999999999914
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "id": 99999999999999976,
+                            "cache_timeout": null,
+                            "changed_on": {
+                                "__datetime__": "2018-07-12T19:41:00"
+                            },
+                            "datasource_type": "table",
+                            "description": "",
+                            "viz_type": "big_number_total",
+                            "params": "{\"y_axis_format\": \".3s\", \"time_grain_sqla\": null, \"since\": \"\", \"datasource_name\": \"dfs.apps.mapr_artists\", \"until\": \"\", \"remote_id\": 99999999999999976, \"metric\": \"count\", \"adhoc_filters\": null, \"database_name\": \"Drill\", \"viz_type\": \"big_number_total\", \"schema\": \"dfs.apps.mapr_artists\", \"datasource\": \"13__table\", \"granularity_sqla\": \"begin_date\", \"url_params\": {}}",
+                            "created_on": {
+                                "__datetime__": "2018-07-11T16:41:48"
+                            },
+                            "perm": "[Drill].[mapr_artists](id:99999999999999913)",
+                            "created_by_fk": 1,
+                            "slice_name": "Total Artists: Drill",
+                            "datasource_name": "dfs.apps.mapr_artists",
+                            "datasource_id": 99999999999999913
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "id": 99999999999999977,
+                            "cache_timeout": null,
+                            "changed_on": {
+                                "__datetime__": "2018-07-12T19:41:00"
+                            },
+                            "datasource_type": "table",
+                            "description": "",
+                            "viz_type": "pie",
+                            "params": "{\"groupby\": [\"gender\"], \"labels_outside\": true, \"datasource_name\": \"dfs.apps.mapr_artists\", \"since\": \"\", \"pie_label_type\": \"key\", \"url_params\": {}, \"until\": \"\", \"remote_id\": 99999999999999977, \"donut\": false, \"metric\": \"count\", \"adhoc_filters\": null, \"database_name\": \"Drill\", \"schema\": \"dfs.apps.mapr_artists\", \"viz_type\": \"pie\", \"show_legend\": true, \"color_scheme\": \"bnbColors\", \"datasource\": \"13__table\", \"slice_id\": 99999999999999977, \"granularity_sqla\": \"begin_date\", \"time_grain_sqla\": null}",
+                            "created_on": {
+                                "__datetime__": "2018-07-11T16:44:41"
+                            },
+                            "perm": "[Drill].[mapr_artists](id:99999999999999913)",
+                            "created_by_fk": 1,
+                            "slice_name": "Artists By Gender: Drill",
+                            "datasource_name": "dfs.apps.mapr_artists",
+                            "datasource_id": 99999999999999913
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "id": 99999999999999978,
+                            "cache_timeout": null,
+                            "changed_on": {
+                                "__datetime__": "2018-07-12T19:41:00"
+                            },
+                            "datasource_type": "table",
+                            "description": "",
+                            "viz_type": "world_map",
+                            "params": "{\"country_fieldtype\": \"name\", \"since\": \"\", \"time_grain_sqla\": null, \"datasource_name\": \"dfs.apps.mapr_artists\", \"max_bubble_size\": \"25\", \"until\": \"\", \"entity\": \"area\", \"show_bubbles\": false, \"metric\": \"count\", \"adhoc_filters\": null, \"database_name\": \"Drill\", \"schema\": \"dfs.apps.mapr_artists\", \"viz_type\": \"world_map\", \"granularity_sqla\": \"begin_date\", \"remote_id\": 99999999999999978, \"datasource\": \"13__table\", \"slice_id\": 99999999999999978, \"secondary_metric\": {\"column\": null, \"expressionType\": \"SQL\", \"optionName\": \"metric_8zlrjapfd1p_sq5zopx9p4\", \"sqlExpression\": \"1\", \"hasCustomLabel\": false, \"label\": \"1\", \"fromFormData\": true, \"aggregate\": null}, \"url_params\": {}}",
+                            "created_on": {
+                                "__datetime__": "2018-07-11T16:48:48"
+                            },
+                            "perm": "[Drill].[mapr_artists](id:99999999999999913)",
+                            "created_by_fk": 1,
+                            "slice_name": "Artists By Area: Drill",
+                            "datasource_name": "dfs.apps.mapr_artists",
+                            "datasource_id": 99999999999999913
+                        }
+                    }
+                ],
                 "dashboard_title": "MapR Music: Drill",
+                "description": null,
+                "json_metadata": "{\"expanded_slices\": {}, \"default_filters\": \"{}\", \"timed_refresh_immune_slices\": [], \"filter_immune_slices\": [], \"remote_id\": 5, \"filter_immune_slice_fields\": {}}",
+                "position_json": "[\n    {\n        \"col\": 1,\n        \"row\": 0,\n        \"size_x\": 7,\n        \"size_y\": 8,\n        \"slice_id\": \"99999999999999973\"\n    },\n    {\n        \"col\": 1,\n        \"row\": 26,\n        \"size_x\": 23,\n        \"size_y\": 18,\n        \"slice_id\": \"99999999999999974\"\n    },\n    {\n        \"col\": 8,\n        \"row\": 0,\n        \"size_x\": 7,\n        \"size_y\": 8,\n        \"slice_id\": \"99999999999999976\"\n    },\n    {\n        \"col\": 15,\n        \"row\": 0,\n        \"size_x\": 9,\n        \"size_y\": 8,\n        \"slice_id\": \"99999999999999977\"\n    },\n    {\n        \"col\": 24,\n        \"row\": 0,\n        \"size_x\": 25,\n        \"size_y\": 24,\n        \"slice_id\": \"99999999999999978\"\n    }\n]",
                 "created_on": {
                     "__datetime__": "2018-07-11T15:22:32"
                 },
-                "position_json": "[\n    {\n        \"col\": 1,\n        \"row\": 0,\n        \"size_x\": 7,\n        \"size_y\": 8,\n        \"slice_id\": \"73\"\n    },\n    {\n        \"col\": 1,\n        \"row\": 26,\n        \"size_x\": 23,\n        \"size_y\": 18,\n        \"slice_id\": \"74\"\n    },\n    {\n        \"col\": 8,\n        \"row\": 0,\n        \"size_x\": 7,\n        \"size_y\": 8,\n        \"slice_id\": \"76\"\n    },\n    {\n        \"col\": 15,\n        \"row\": 0,\n        \"size_x\": 9,\n        \"size_y\": 8,\n        \"slice_id\": \"77\"\n    },\n    {\n        \"col\": 24,\n        \"row\": 0,\n        \"size_x\": 25,\n        \"size_y\": 24,\n        \"slice_id\": \"78\"\n    }\n]"
+                "created_by_fk": 1,
+                "slug": null
             }
         }
     ]
