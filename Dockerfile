@@ -15,8 +15,9 @@ WORKDIR /home/mapr/mapr-apps/sqlalchemy-drill/
 RUN git checkout mapr-superset
 RUN python setup.py install
 
-COPY ./bin/run.sh /home/mapr/mapr-apps/mapr-superset/run.sh
-COPY ./datasources/mapr-datasources /home/mapr/mapr-apps/mapr-superset/mapr-datasources
-RUN chmod +x /home/mapr/mapr-apps/mapr-superset/run.sh
+COPY ./bin /home/mapr/mapr-apps/mapr-superset/bin
+COPY ./datasources /home/mapr/mapr-apps/mapr-superset/datasources
+COPY ./dashboard /home/mapr/mapr-apps/mapr-superset/dashboard
+RUN chmod +x /home/mapr/mapr-apps/mapr-superset/bin/*
 
-CMD ["/home/mapr/mapr-apps/mapr-superset/run.sh"]
+CMD ["/home/mapr/mapr-apps/mapr-superset/bin/run.sh"]

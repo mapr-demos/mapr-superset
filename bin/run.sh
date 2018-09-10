@@ -26,17 +26,21 @@ else
     exit 1
 fi
 
+# Change permissions
+sudo chown -R ${MAPR_CONTAINER_USER}:${MAPR_CONTAINER_GROUP} /home/mapr/mapr-apps
+
 fabmanager create-admin --app superset --username admin --password admin --firstname admin --lastname admin --email admin@fab.org
 
 superset db upgrade
 superset load_examples
 superset init
 
-sed -i -e "s=hive://node1=hive://$HIVE_NODE=g" /home/mapr/mapr-apps/mapr-superset/mapr-datasources
-sed -i -e "s=sadrill://node1=sadrill://$DRILL_NODE=g" /home/mapr/mapr-apps/mapr-superset/mapr-datasources
+sed -i -e "s=hive://node1=hive://$HIVE_NODE=g" /home/mapr/mapr-apps/mapr-superset/datasources/mapr-datasources
+sed -i -e "s=sadrill://node1=sadrill://$DRILL_NODE=g" /home/mapr/mapr-apps/mapr-superset/datasources/mapr-datasources
 
-superset import_datasources -p /home/mapr/mapr-apps/mapr-superset/mapr-datasources
+superset import_datasources -p /home/mapr/mapr-apps/mapr-superset/datasources/mapr-datasources
 
-# TODO: find a way to import dashboards
+python /home/mapr/mapr-apps/mapr-superset/bin/dashboard-import.py /home/mapr/mapr-apps/mapr-superset/dashboard/mapr-dashboard-drill.json
+python /home/mapr/mapr-apps/mapr-superset/bin/dashboard-import.py /home/mapr/mapr-apps/mapr-superset/dashboard/mapr-dashboard-hive.json
 
 superset runserver -d -p ${WEB_UI_PORT}

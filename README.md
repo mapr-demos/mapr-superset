@@ -6,6 +6,7 @@
 * [Installation](#installation)
 * [MapR Music Hive Dashboard](#mapr-music-hive-dashboard)
 * [MapR Music Drill Dashboard](#mapr-music-drill-dashboard)
+* [Dockerizing](#dockerizing)
 
 
 ## Overview
@@ -318,3 +319,59 @@ and `mapr_albums`(and `mapr_artists`) table name.
 * Import dashboard 
 
 Import [MapR Music Drill Dashboard](/dashboard/mapr-dashboard-drill.json) in the same way as MapR Music Hive Dashboard.
+
+
+## Dockerizing
+
+You can easily deploy and test Superset by using Docker. MapR Superset image based on 
+[MapR Persistent Application Client Container image](https://docstage.mapr.com/60/AdvancedInstallation/UsingtheMapRPACC.html), 
+which is a Docker-based container image that includes a container-optimized MapR client. The PACC provides seamless 
+access to MapR Converged Data Platform services, including MapR-FS, MapR-DB, and MapR-ES. The PACC makes it fast and 
+easy to run containerized applications that access data in MapR.
+
+### Prerequisites
+
+You still need properly configured and running MapR Cluster with Hive and Drill installed. Docker image packages 
+preconfigured Superset with sample MapR Dashboards and allows you to easily deploy and test them.
+
+### Building MapR Superset Docker image 
+
+In order to build MapR Superset Docker image execute the following commands:
+```
+$ docker build . -t mapr-superset
+```
+
+### Running container
+
+In order to create and run container from existing `mapr-superset` image use the following command:
+```
+docker run \
+-e MAPR_CONTAINER_USER=mapr \
+-e MAPR_CLDB_HOSTS=192.168.99.18:7222 \
+-e MAPR_CLUSTER=my.cluster.name \
+-e DRILL_NODE=192.168.99.18 \
+-e HIVE_NODE=192.168.99.18 \
+-e WEB_UI_PORT=8080 \
+-it --net=host mapr-superset
+```
+
+Where:
+* `MAPR_CONTAINER_USER`
+The user that the user application inside the Docker container will run as. This configuration is functionally 
+equivalent to the Docker native `-u` or `--user`. Do not use Docker `-u` or `--user`, as the container needs to start as 
+the root user to bring up FUSE before switching to the `MAPR_CONTAINER_USER`.
+
+* `MAPR_CLDB_HOSTS`
+The list of CLDB hosts of your MapR cluster.
+
+* `MAPR_CLUSTER`
+The name of the cluster.
+
+* `DRILL_NODE`
+Drill node hostname.
+
+* `HIVE_NODE`
+Hive node hostname.
+
+* `WEB_UI_PORT`
+Superset UI port number.
