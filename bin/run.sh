@@ -43,4 +43,6 @@ superset import_datasources -p /home/mapr/mapr-apps/mapr-superset/datasources/ma
 python /home/mapr/mapr-apps/mapr-superset/bin/dashboard-import.py /home/mapr/mapr-apps/mapr-superset/dashboard/mapr-dashboard-drill.json
 python /home/mapr/mapr-apps/mapr-superset/bin/dashboard-import.py /home/mapr/mapr-apps/mapr-superset/dashboard/mapr-dashboard-hive.json
 
+export PYTHONPATH=/home/mapr/mapr-apps/mapr-superset/bin/
+
 superset runserver -d -p ${WEB_UI_PORT}
